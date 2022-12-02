@@ -45,10 +45,12 @@ header nav ul li a {
 
 }
 
+/* Section Styles */
 section {
   padding: 80px;
 }
 
+/* Hero Container Styles */
 .hero {
   background-position: center;
   padding-right: 25px;    
