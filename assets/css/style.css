@@ -67,3 +67,147 @@ section {
   padding-left: 5px;
 }
 
+/* Main Container Styles */
+main {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  display:flex;
+  flex-direction: row;
+  margin: 25px 0;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+/*
+h2 {
+  display: flex;
+  font-size: 45px;
+  padding-right: 20px;
+  color: #273824;
+  text-align: left;
+  border-right-style: solid;
+  border-right-width: thick;
+  border-right-color: #576f53;
+}
+*/  
+p {
+  line-height: 30px;
+  font-size: 19px;
+  text-align: center;
+}
+
+#about-me {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 0 30px;
+  flex-wrap: wrap;
+  width: 80%;
+  }
+
+/* Category Grid Work CSS */
+
+
+
+#categoryGrid {
+  margin: 0px 5%;
+  margin-right: 50px;
+  padding: 50px;
+  height: 900px;
+  display: grid;
+  grid-template-rows: 300px 300px;
+  gap: 1rem;
+  grid-template-columns: 600px 600px;
+  grid-template-areas:
+  "wh      wh"
+  "bl      gr"
+  "yl      rd"
+  ;
+}
+
+#white {
+  grid-area: wh;
+  background-image: url("../images/02-portfolio-1.jpg");
+
+}
+#black {
+  grid-area: bl;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#green {
+  grid-area: gr;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#yellow {
+  grid-area: yl;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#red {
+  grid-area: rd;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  margin: 5px;
+
+
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+
+
+/* contact section */
+
+.page-section contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: #273824;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  font-style: normal;
+  margin: 1px 1px;
+  display: inline-block;
+}
+.contact address a:hover {
+  color: #576f53;
+}
+
+.sectionHeader h2 {
+  height: 100%;
+  width: 100px;
+  font-size: 25px;
+}
+
+.sectionHeader {
+  padding-bottom: 10px;
+  border-right-style: solid;
+  border-right-width: thick;
+
+}
+
