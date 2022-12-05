@@ -62,8 +62,10 @@ main {
 
 p {
   line-height: 30px;
-  font-size: 19px;
-  text-align: center;
+  font-size: 17px;
+  text-align: justify;
+  text-align-last: right;
+  padding: 35px;
 }
 
 #about {
@@ -99,32 +101,12 @@ img {
   margin-left: 30px;
   margin-top: 40px;
   margin-right: -40px;
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 
-
-/*
-#about {
-  display: flex;
-  flex-direction: row;
-  text-align: justify;
-  justify-content: space-between;
-  padding: 0 60px 0 30px;
-  flex-wrap: wrap;
-  width: 70%;
-  height: 90%;;
-  }
-
-*/
-/* Category Grid Work CSS */
-
-
-
 #categoryGrid {
-  margin: 0px 5%;
-  margin-right: 50px;
-  padding: 50px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 500px 500px;
   grid-template-rows: 200px 200px 200px;
@@ -199,11 +181,10 @@ img {
 
 .contact address a {
   color: #273824;
-  padding: 5px;
+  padding: 50px;
   text-decoration: none;
   font-size: 25px;
   font-style: normal;
-  margin: 1px 1px;
   display: inline-block;
 }
 .contact address a:hover {
