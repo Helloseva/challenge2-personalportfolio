@@ -155,21 +155,19 @@ img {
 }
 
 .categoryGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
   display: grid;
   align-content: end;
   margin: 5px;
   text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
   background-blend-mode: soft-light;
-  font-size: 0.9rem;
-  background-size: 150%;
 }
 
 .categoryGridArea:hover {
-  background-color: #8dad87;
+  background-color: #D9C0F1;
 }
 
 .categoryGridArea a {
@@ -188,17 +186,15 @@ img {
   height: 100%;
 }
 
+.contact address a:hover {
+  color: #B0D2C7;
+}
 .contact address a {
+  display: inline-block;
+  font-size: 25px;
   color: #273824;
   padding: 50px;
   text-decoration: none;
-  font-size: 25px;
-  font-style: normal;
-  display: inline-block;
-}
-
-.contact address a:hover {
-  color: #576f53;
 }
 
 /* media section */
