@@ -35,11 +35,10 @@ This page is about me and my works. It can be used to to have a look on my recen
 Screeshot of the Web Page:
 
 
+![screenshot of page](assets/images/01screenshot .png)
+![screenshot of page](assets/images/02screenshot .png)
+![screenshot of page](assets/images/03screenshot .png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-
-![screenshot of page](assets/images/01screenshot.png)
 
 
 
