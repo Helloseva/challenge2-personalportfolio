@@ -1,50 +1,75 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  background-color: whitesmoke;
 }
 
 /* Header Styles */
+
 header {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #273824;
+  background: #273824;
+  color: whitesmoke;
   font-size: 30px;
 }
 
 header h1 {
+  display: inline-flex;
   background-color: #576f53;
-  color: whitesmoke;
   padding-left: 50px;
   padding-right: 10px;
 }
 
-header nav {
-  padding: 15px 0;
-
+nav {
+  margin: 7px;
+  float: right;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+header nav ul li {
+  display: inline;
 }
 
-header nav ul li a {   
-  padding: 15px;
-  font-size: 20px;
-  margin: 25px 25px;
-  text-align: center; 
+nav a {
+  text-decoration: none;
   color: whitesmoke;
-
+  font-size: 20px;
+  padding: 20px;
 }
 
+
+/* Main Container Styles */
+main {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+p {
+  line-height: 30px;
+  font-size: 19px;
+  text-align: center;
+}
+
+#about {
+  max-width: 640px;
+  
+}
 /* Section Styles */
 section {
   padding: 80px;
@@ -67,32 +92,6 @@ section {
   padding-left: 5px;
 }
 
-/* Main Container Styles */
-main {
-  max-width: 88%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-section {
-  display:flex;
-  width:90%;
-  flex-direction: row;
-  margin: 25px 0;
-  padding: 10px 0;
-  justify-content: space-between;
-  align-items: stretch;
-
-}
- 
-
-
-
-p {
-  line-height: 30px;
-  font-size: 19px;
-  text-align: center;
-}
 
 img {
   max-width: 270px;
@@ -103,10 +102,7 @@ img {
   border-radius: 20px;
 }
 
-#about {
-  max-width: 640px;
-  
-}
+
 
 /*
 #about {
@@ -129,11 +125,10 @@ img {
   margin: 0px 5%;
   margin-right: 50px;
   padding: 50px;
-  height: 900px;
   display: grid;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 200px 200px 200px;
   gap: 1rem;
-  grid-template-columns: 600px 600px;
   grid-template-areas:
   "wh      wh"
   "bl      gr"
@@ -166,7 +161,6 @@ img {
   background-image: url("../images/02-run-buddy.jpg");
 }
 
-
 .categoryGridArea {
   background-position: center;
   background-size: cover;
@@ -175,18 +169,23 @@ img {
   display: grid;
   align-content: end;
   margin: 5px;
-
-
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  font-size: 0.9rem;
+  background-size: 150%;  
 }
 
-.heading {
-  background-color: rgba(0,0,0,0.7);
+.categoryGridArea:hover {
+  background-color: #8dad87;
+}
+
+.categoryGridArea a {
   padding: 15px;
-  height: 25px;
+  height: 160px;
   color: white;
   font-size: 18px;
-  border-bottom: 5px solid #FF6200;
 }
+
 
 
 /* contact section */
@@ -224,3 +223,53 @@ img {
 
 }
 
+/* media section */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 65%;
+  }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid #273824;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categoryGridArea,
+  .categoryGridArea:first-child {
+    flex-basis: 100%;
+  }
+
+  .categoryGridArea:first-child {
+    min-height: 150px;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
