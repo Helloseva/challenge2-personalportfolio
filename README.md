@@ -35,9 +35,9 @@ This page is about me and my works. It can be used to to have a look on my recen
 Screeshot of the Web Page:
 
 
-![screenshot of page](assets/images/01Screenshot .png)
-![screenshot of page](assets/images/02Screenshot .png)
-![screenshot of page](assets/images/03Screenshot .png)
+![screenshot of page](assets/images/01Screenshot.png)
+![screenshot of page](assets/images/02Screenshot.png)
+![screenshot of page](assets/images/03Screenshot.png)
 
 
 
