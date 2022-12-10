@@ -18,7 +18,7 @@ header {
   padding-top: 15px;
   background: #92AEA6;
   color: whitesmoke;
-  
+
 }
 
 header h1 {
@@ -189,6 +189,7 @@ img {
 .contact address a:hover {
   color: #B0D2C7;
 }
+
 .contact address a {
   display: inline-block;
   font-size: 25px;
@@ -197,50 +198,34 @@ img {
   text-decoration: none;
 }
 
-/* media section */
+/* Media queries */
 
-@media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
+@media screen and (max-width: 820px) {
+
+  .sectionHeader h2 {
+    font-size: 35px;
+    height: 40%;
+    width: 30px;
   }
 
   header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
-  }
-
-  header nav {
-    justify-content: center;
-  }
-
-  .page-section>h2,
-  .page-section>div {
-    flex: 0 0 65%;
-  }
-
-  .page-section>h2 {
-    border-right: none;
-    border-bottom: 4px solid #273824;
+    width: 50%;
+    padding: 20px;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .categoryGridArea,
-  .categoryGridArea:first-child {
-    flex-basis: 100%;
+    font-size: 30px;
   }
 
-  .categoryGridArea:first-child {
-    min-height: 150px;
+  .page-wrapper {
+    width: 20%;
+    height: 30%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "white"
+      "black"
+      "red"
+      "yellow"
+      "green"
   }
 
   .contact address {
